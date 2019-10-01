@@ -1,12 +1,12 @@
 #include <stdio.h>
 #include <curl/curl.h>
 
-int main(void) {
+char* getRequest(*char[] url) {
   CURL *curl;
   CURLcode res;
   curl = curl_easy_init();
   if(curl) {
-    curl_easy_setopt(curl, CURLOPT_URL, "http://hq.sinajs.cn/list=s_sz002594");
+    curl_easy_setopt(curl, CURLOPT_URL, url);
     curl_easy_setopt(curl, CURLOPT_HTTP_VERSION, (long)CURL_HTTP_VERSION_2);
     res = curl_easy_perform(curl);
     if(res != CURLE_OK) {
