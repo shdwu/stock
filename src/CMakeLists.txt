@@ -1,3 +1,4 @@
-cmake_minimum_required (VERSION 2.6)
-project (stock)
-add_executable (curl_http_get curl_http_get.c)
+cmake_minimum_required (VERSION 2.8)
+project (stock C)
+aux_source_directory(. DIR_SRCS)
+add_executable (main ${DIR_SRCS})

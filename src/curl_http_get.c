@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <curl/curl.h>
 
-char* getRequest(*char[] url) {
+char* getRequest(char* url) {
   CURL *curl;
   CURLcode res;
   curl = curl_easy_init();
