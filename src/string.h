@@ -1,6 +1,6 @@
 #ifndef STRING_H
 #define STRING_H
 
-char* 
+char* join(char* str1, char* str2);
 
 #endif
